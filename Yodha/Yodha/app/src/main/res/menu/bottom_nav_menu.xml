@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/offers"
+        android:icon="@drawable/ic_offer"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/quiz_home"
+        android:icon="@drawable/ic_cup"
+        android:title="Data" />
+
+    <item
+        android:id="@+id/publisher"
+        android:icon="@drawable/ic_publisher"
+        android:title="Collectdata" />
+</menu>

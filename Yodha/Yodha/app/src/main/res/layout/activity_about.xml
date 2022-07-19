@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.AboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtoolabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/about"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/x16"
+                android:fontFamily="serif-monospace"
+                android:text="@string/app_title"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s30" />
+
+            <ImageView
+                android:id="@+id/IVabout"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:src="@mipmap/applogo"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/TVversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x20"
+                android:fontFamily="serif-monospace"
+                android:text="@string/app_title"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s16" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_justified_paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/abouapp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/s14" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

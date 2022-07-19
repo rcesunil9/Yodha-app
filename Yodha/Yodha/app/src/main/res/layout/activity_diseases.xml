@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.DiseasesActivity">
+
+    <RelativeLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/lightblue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtooldiseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/diseseds"
+            app:titleTextColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/TVcleardata"
+            android:layout_width="@dimen/x70"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/x4"
+            android:background="@drawable/bg_bottonwhite"
+            android:gravity="center"
+            android:padding="@dimen/x4"
+            android:text="@string/clear"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s12" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/SPanimaID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x60"
+                android:layout_margin="@dimen/x16"
+                android:background="@drawable/spinner_background" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILdisesdate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/date"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdeses_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:fontFamily="monospace"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x16"
+                android:padding="@dimen/x2"
+                android:text="@string/disesdetectetd"
+                android:textSize="@dimen/s20" />
+
+            <CheckBox
+                android:id="@+id/CBDTone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/mastitis" />
+
+
+            <CheckBox
+                android:id="@+id/CBDTtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/stillbirth" />
+
+            <CheckBox
+                android:id="@+id/CBDTthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/prolapse" />
+
+            <CheckBox
+                android:id="@+id/CBDTfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/respiratoryproblem" />
+
+            <CheckBox
+                android:id="@+id/CBDTfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/digestion" />
+
+            <CheckBox
+                android:id="@+id/CBDTsix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/anyother" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILdisesdate_comment"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/comment"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdisease_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILdisesdate_date"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x16"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x16"
+                android:hint="@string/date"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETcured_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/CBCOone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/mastitiscured" />
+
+
+            <CheckBox
+                android:id="@+id/CBCOtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/stillbirthcured" />
+
+            <CheckBox
+                android:id="@+id/CBCOthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/prolapsecured" />
+
+            <CheckBox
+                android:id="@+id/CBCOfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/respiratoryproblemcured" />
+
+            <CheckBox
+                android:id="@+id/CBCOfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:text="@string/digestioncured" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILemaildate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/relapsedate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETreleapsedieses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILemaildatecrtd"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/relapsedatecurt"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETreleapsediesescrtdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILvacinatestatus"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/vacinationstatus"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETvacinestatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILvacinatedate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/relapsedatecurt"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETreleapsevcndate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/RGvaccineby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginEnd="@dimen/x16"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiovet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/vet"
+                    android:textSize="@dimen/s12" />
+
+                <RadioButton
+                    android:id="@+id/radioparavet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/paravet"
+                    android:textSize="@dimen/s12" />
+
+                <RadioButton
+                    android:id="@+id/radioself"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/self"
+                    android:textSize="@dimen/s12" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/TVtodaysubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginRight="@dimen/x16"
+                android:layout_marginBottom="@dimen/x16"
+                android:background="@drawable/bg_botton"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x16"
+                android:paddingRight="@dimen/x16"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/s22" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

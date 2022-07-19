@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SplashActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/lightblue"
+        android:text="@string/app_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/s28"
+        android:id="@+id/Tvtittle"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/applogo"
+        android:layout_below="@+id/Tvtittle"
+        android:layout_marginTop="@dimen/x100"
+        android:id="@+id/IVlogo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="@dimen/s24"
+        android:id="@+id/TVtitone"
+        android:layout_below="@+id/IVlogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/lightblue"
+        android:layout_marginTop="@dimen/x16"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_titleone"
+        android:textSize="@dimen/s20"
+        android:id="@+id/TVtitletwo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/lightblue"
+        android:layout_below="@+id/TVtitone"
+        android:layout_marginTop="@dimen/x8"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_titletwo"
+        android:textSize="@dimen/s20"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/lightblue"
+        android:layout_marginTop="@dimen/x8"
+        android:layout_below="@+id/TVtitletwo"
+        android:fontFamily="monospace"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_titlecopy"
+        android:textSize="@dimen/s12"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/lightblue"
+        android:layout_marginBottom="@dimen/x8"
+        android:fontFamily="monospace"
+        />
+
+
+</RelativeLayout>

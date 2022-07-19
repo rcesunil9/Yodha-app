@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginTop="@dimen/x8"
+        android:layout_marginEnd="@dimen/x8"
+        android:layout_marginBottom="@dimen/x8"
+        app:cardCornerRadius="@dimen/x4"
+        app:elevation="@dimen/x4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TVusernametit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:text="@string/animalidtitr"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s16" />
+
+
+            <TextView
+                android:id="@+id/TVaniamlid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVusernametit"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginEnd="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:text="Hii amit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+            <TextView
+                android:id="@+id/TVanimaliddelete"
+                android:layout_width="@dimen/x50"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x8"
+                android:layout_marginBottom="@dimen/x4"
+                android:background="@drawable/bg_bottonred"
+                android:gravity="center"
+                android:padding="@dimen/x4"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s12" />
+
+            <TextView
+                android:id="@+id/TVanimaltitspecies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x8"
+                android:layout_below="@+id/TVaniamlid"
+                android:padding="@dimen/x2"
+                android:text="@string/species"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s16" />
+
+            <TextView
+                android:id="@+id/TVanimalspecies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVanimaltitspecies"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+
+            <TextView
+                android:id="@+id/TVanimaltit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/TVanimaliddelete"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_marginEnd="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:text="@string/sex"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s16" />
+
+            <TextView
+                android:id="@+id/TVanimalsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/TVanimaltit"
+                android:layout_marginEnd="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+
+
+            <TextView
+                android:id="@+id/TVanimaltitbreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_marginEnd="@dimen/x8"
+                android:layout_below="@+id/TVanimalspecies"
+                android:padding="@dimen/x2"
+                android:text="@string/breed"
+                android:textColor="@color/lightblue"
+                android:textSize="@dimen/s16" />
+
+            <TextView
+                android:id="@+id/TVanimalbreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVanimaltitbreed"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/x4"
+                android:layout_marginStart="@dimen/x8"
+                android:padding="@dimen/x2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

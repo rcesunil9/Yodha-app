@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "894581629433",
+    "project_id": "yodha-6f005",
+    "storage_bucket": "yodha-6f005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894581629433:android:4e485bc98c28bb32fb1d28",
+        "android_client_info": {
+          "package_name": "com.yodha.gadvasu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894581629433-49i7b6t86ngeni7cppssf6288shfjc8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yodha.gadvasu",
+            "certificate_hash": "f348f6cfb8bb1d021a28796647b973184362d6f3"
+          }
+        },
+        {
+          "client_id": "894581629433-56q06ob3j4ep31if01j2tf2dal0m7nbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwVrmmmMBWQXtcqcsF9JX7oC7PZt62kCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894581629433-56q06ob3j4ep31if01j2tf2dal0m7nbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

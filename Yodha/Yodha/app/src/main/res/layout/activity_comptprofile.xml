@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ComptprofileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x16"
+            android:fontFamily="monospace"
+            android:text="@string/completepro"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/s22" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/x8"
+            android:background="@color/lightblue" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILemaillogin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:hint="@string/name"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:fontFamily="monospace"
+            android:text="@string/gender"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/s14" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radioothers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/others"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:hint="@string/age"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:fontFamily="monospace"
+            android:text="@string/education"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/s14" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupeducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginEnd="@dimen/x8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiofifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/upto5th"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radiotenth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/tenth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radiograduate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/twelth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+
+            <RadioButton
+                android:id="@+id/radiograduated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/graduted"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:fontFamily="monospace"
+            android:text="@string/selectfarm"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/s14" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupefarmsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radiolarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:checked="false"
+                android:text="@string/large"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radiomedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:checked="false"
+                android:text="@string/madium"
+                android:textSize="@dimen/s12" />
+
+
+            <RadioButton
+                android:id="@+id/radiosmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:checked="false"
+                android:text="@string/small"
+                android:textSize="@dimen/s12" />
+
+            <RadioButton
+                android:id="@+id/radiononcommercial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:checked="false"
+                android:text="@string/noncommericial"
+                android:textSize="@dimen/s12" />
+
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILaddress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/framname"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETfarmname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILstreet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/street"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILcityvillage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/townvillage"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETcityvillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILpin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/pincode"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETpincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILdistric"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/distric"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETdistric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILstate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginEnd="@dimen/x16"
+            android:hint="@string/state"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/x16">
+
+            <CheckBox
+                android:id="@+id/checkboxterms"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/TvloginTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x4"
+                android:padding="@dimen/x2"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TVcomplete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:background="@drawable/bg_botton"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x16"
+            android:paddingRight="@dimen/x16"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/s22" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MobileotpActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:layout_gravity="center_horizontal"
+        app:lottie_rawRes="@raw/mobileotp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="@dimen/x16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/otpverification"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s18"
+        android:layout_marginTop="@dimen/x16"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/otpverificationtetx"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s18"
+        android:layout_marginTop="@dimen/x16"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="9855664589"
+        android:id="@+id/TVsetmobile"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s18"
+        android:layout_marginTop="@dimen/x16"/>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_gravity="center_horizontal"
+        android:itemBackground="@color/white"
+        android:textColor="@color/lightblue"
+        app:bar_enabled="true"
+        app:bar_height="2dp"
+        app:length="6"
+        app:otp_text_size="24dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="9855664589"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s18"
+        android:layout_marginTop="@dimen/x16"/>
+
+
+    <TextView
+        android:id="@+id/TVverify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        android:background="@drawable/bg_botton"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x16"
+        android:paddingRight="@dimen/x16"
+        android:text="@string/verify"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/s22" />
+
+</LinearLayout>

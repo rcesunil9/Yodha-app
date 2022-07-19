@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ContactsusActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtoolcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/contactsus"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/contactsus"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/animationView"
+        android:layout_marginTop="@dimen/x16"
+        android:id="@+id/TVcantcustit"
+        android:textSize="@dimen/s24"
+        android:text="@string/emailus"
+        android:textColor="@color/lightblue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TVcantcustit"
+        android:layout_marginTop="@dimen/x16"
+        android:id="@+id/TVcantcus"
+        android:textSize="@dimen/s20"
+        android:textColor="@color/lightblue"/>
+
+</RelativeLayout>

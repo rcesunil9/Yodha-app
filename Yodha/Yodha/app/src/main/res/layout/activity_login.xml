@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x50"
+        android:fontFamily="monospace"
+        android:text="@string/app_title"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s28"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:layout_gravity="center_horizontal"
+        app:lottie_rawRes="@raw/mobile"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/x50"
+        android:fontFamily="monospace"
+        android:layout_marginStart="@dimen/x16"
+        android:text="@string/loginmob"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s18" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILemaillogin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x16"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginEnd="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        android:hint="@string/mobilenu"
+        app:prefixText="+91"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:textColor="@color/black" />
+        <requestFocus />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/TVlogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginTop="@dimen/x8"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        android:background="@drawable/bg_botton"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x16"
+        android:paddingRight="@dimen/x16"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/s22" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/x16"
+        android:layout_marginEnd="@dimen/x16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingStart="@dimen/x8"
+            android:paddingEnd="@dimen/x4"
+            android:text="@string/you_have_not_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16" />
+
+        <TextView
+            android:id="@+id/TVsignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:padding="@dimen/x8"
+            android:text="@string/signup"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/s16" />
+    </LinearLayout>
+
+
+    <!--<TextView
+        android:id="@+id/TVforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="@dimen/x8"
+        android:text="@string/forgotpassword"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/s16" />-->
+
+</LinearLayout>

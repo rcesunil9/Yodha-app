@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReproductionActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/lightblue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtoolrepdut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/reprodtion"
+            app:titleTextColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/TVcleardata"
+            android:layout_width="@dimen/x70"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/x4"
+            android:background="@drawable/bg_bottonwhite"
+            android:gravity="center"
+            android:padding="@dimen/x4"
+            android:text="@string/clear"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s12" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/SPanimaID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x60"
+                android:layout_margin="@dimen/x16"
+                android:background="@drawable/spinner_background" />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/strow_no"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_strawno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprobreed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/breed_type"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_breed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprodate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/date"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/x16">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animalagainheat"
+                    android:layout_marginTop="@dimen/x16"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupsouceby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/x16"
+                    android:layout_marginEnd="@dimen/x8"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiofifth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/yes"
+                    android:textSize="@dimen/s12" />
+
+                <RadioButton
+                    android:id="@+id/radiotenth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/no"
+                    android:textSize="@dimen/s12" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostsecondno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/second_aistrow_no"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_secondstrw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostsecondbreed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/second_aibreed"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_secondaibreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreproseconddate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/second_aidate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_secondaidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/x16">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animalagainheat"
+                    android:layout_marginTop="@dimen/x16"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radioagainheat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/x16"
+                    android:layout_marginEnd="@dimen/x8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RBheat2yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/s12" />
+
+                    <RadioButton
+                        android:id="@+id/RBheat2no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/no"
+                        android:textSize="@dimen/s12" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostthirdno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/third_aistrow_no"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_thirdstrw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostthirdbreed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/third_aibreed"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_thirdaibreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprothirddate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/third_aidate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_thirdaidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/x16">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animalagainheat"
+                    android:layout_marginTop="@dimen/x16"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radioagainheat3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/x16"
+                    android:layout_marginEnd="@dimen/x8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RBheat3yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/s12" />
+
+                    <RadioButton
+                        android:id="@+id/RBheat3no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/no"
+                        android:textSize="@dimen/s12" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostfourthno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fourth_aistrow_no"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fourthstrw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostfourthbreed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fourth_aibreed"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fourthaibreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprofourthdate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fourth_aidate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fourthaidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/x16">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animalagainheat"
+                    android:layout_marginTop="@dimen/x16"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radioagainheat4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/x16"
+                    android:layout_marginEnd="@dimen/x8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RBheat4yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/s12" />
+
+                    <RadioButton
+                        android:id="@+id/RBheat4no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/no"
+                        android:textSize="@dimen/s12" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostfifthhno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fifth_aistrow_no"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fifthstrw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprostfiftbreed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fift_aibreed"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fifthaibreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreprofifthdate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/fift_aidate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_fiftaidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILrepropregnecydate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/pregnecydate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_pregnecyaidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/x16">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregencycheckby"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radioapregnecycheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/x16"
+                    android:layout_marginEnd="@dimen/x8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RBpragvet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/vet"
+                        android:textSize="@dimen/s12" />
+
+                    <RadioButton
+                        android:id="@+id/RBpragprevent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/prevent"
+                        android:textSize="@dimen/s12" />
+
+                    <RadioButton
+                        android:id="@+id/RBpragself"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/self"
+                        android:textSize="@dimen/s12" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreproexpcalvingdate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/expectedcalvingdt"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_expcalvingdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILreproatulcalvingdate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginEnd="@dimen/x16"
+                android:layout_marginBottom="@dimen/x8"
+                android:hint="@string/actualcalvingdate"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETanimal_atulcalvingdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/TVreproductionsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginRight="@dimen/x16"
+                android:layout_marginBottom="@dimen/x16"
+                android:background="@drawable/bg_botton"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x16"
+                android:paddingRight="@dimen/x16"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/s22" />
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.31" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2115" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_diseases.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_diseses_occuer.xml" value="0.24909420289855072" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_expenturedataanlysis.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_firm_analysis.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_fortnightdetails.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_product_analsis.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/activity_productanalylist.xml" value="0.16210739614994935" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/dashboarddata.xml" value="0.16184971098265896" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/firm_customlayout.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/firmchildviewdata_lay.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP/Downloads/Yodha/Yodha/Yodha/app/src/main/res/layout/frag_dashboard.xml" value="0.3333333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

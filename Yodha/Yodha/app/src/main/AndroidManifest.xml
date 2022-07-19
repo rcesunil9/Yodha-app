@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yodha.gadvasu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogonew"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yodha"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.FortnightdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ExpenturedataanlysisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FirmAnalysisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProductanalylistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MaterpedgriwdataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MyheardviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SalesAnaysisgraphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ContactsusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DisesesOccuerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProductAnalsisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ReproductionAnalaysisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListofanimalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FortnightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DiseasesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ExpentitureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TodayproductionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ReproductionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AnimalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TermscondiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MobileotpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Activity.ComptprofileActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Activity.SignupActivity"
+            android:theme="@style/Theme.Yodha" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/Theme.Yodha"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Yodha" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Yodha">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

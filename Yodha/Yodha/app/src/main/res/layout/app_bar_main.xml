@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize" />
+
+        <TextView
+            android:id="@+id/Tvdashtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_toEndOf="@+id/toolbar"
+            android:text="@string/dashboard"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20"
+            tools:ignore="RelativeOverlap" />
+
+
+        <FrameLayout
+            style="?attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x8"
+            android:clipToPadding="false"
+            android:id="@+id/FLnotification"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/IVnofication"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:contentDescription="@string/tab_text_1"
+                android:padding="@dimen/x2"
+                android:src="@drawable/ic_baseline_notifications_24" />
+
+            <TextView
+                android:id="@+id/cart_badge"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right|end|top"
+                android:layout_marginEnd="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/badge_background"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="10sp"/>
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SellActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtoolsell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/sellanalysis"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/nodatafound"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Abbbarabout"
+        android:layout_marginTop="@dimen/x8"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x8"
+            app:cardCornerRadius="@dimen/x8"
+            app:cardElevation="@dimen/x4">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:text="@string/animamalsale"
+                        android:textSize="@dimen/s16" />
+
+                    <TextView
+                        android:id="@+id/Saleanimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:text="@string/gunnaybagsale"
+                        android:textSize="@dimen/s16" />
+
+                    <TextView
+                        android:id="@+id/gunnybagsale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/x4"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_marginEnd="@dimen/x4"
+                        android:layout_marginBottom="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:text="@string/manuresale"
+                        android:textSize="@dimen/s16" />
+
+                    <TextView
+                        android:id="@+id/Manuresale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/x4"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_marginEnd="@dimen/x4"
+                        android:layout_marginBottom="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x4"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        android:text="@string/gheesale"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x4"
+                        android:id="@+id/Gheesale"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x4"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        android:text="@string/others"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x4"
+                        android:id="@+id/Others"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/lighlt_line"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x4"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        android:text="@string/ttamount"/>
+
+                    <TextView
+                        android:id="@+id/Totalamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/x4"
+                        android:layout_marginTop="@dimen/x4"
+                        android:layout_marginEnd="@dimen/x4"
+                        android:layout_marginBottom="@dimen/x4"
+                        android:padding="@dimen/x4"
+                        android:textSize="@dimen/s16"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ReproductionAnalaysisActivity">
+
+    <RelativeLayout
+        android:id="@+id/Abbbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/lightblue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBtoollistofanimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/myhardview"
+            app:titleTextColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/TVanimaliddelete"
+            android:layout_width="@dimen/x100"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/x4"
+            android:background="@drawable/bg_bottonwhite"
+            android:gravity="center"
+            android:padding="@dimen/x4"
+            android:text="@string/showpedigree"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s12" />
+
+
+    </RelativeLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/nodatafound"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RLlistofanimal"
+        android:layout_below="@+id/Abbbarabout"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"/>
+
+</RelativeLayout>
